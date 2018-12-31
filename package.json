@@ -1,0 +1,10 @@
+{
+  "name": "Backbone_Testing",
+  "description": "An API of city data to supply to a Backbone front-end",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.3",
+    "normalize.css": "^3.0.3"
+  }
+}

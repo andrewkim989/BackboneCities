@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src = "https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src = "https://ajax.cdnjs.com/ajax/libs/underscore.js/1.9.1/underscore.js"></script>
+        <script src = "https://ajax.cdnjs.com/ajax/libs/backbone.js/1.3.3/backbone.js"></script>
+        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+        <title>Backbone Cities</title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+            #wrapper {
+                background-color: lightgrey;
+            }
+            #cityform {
+                margin-left: 200px;
+                width: 280px;
+                padding-bottom: 30px;
+                display: inline-block;
+            }
+            #cityform h2 {
+                margin-left: 20px;
+            }
+            #instructions {
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 150px;
+                width: 500px;
+            }
+            .singlecity {
+                margin: 20px;
+                padding: 10px;
+                background-color: skyblue;
+                width: 250px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "wrapper">
+            <h1>Backbone Cities</h1>
+            <div id = "cityform">
+                <h2>Create a new city</h2><br>
+                City: <input type = "text" name = "name"><br><br>
+                Country: <input type = "text" name = "country"><br><br>
+                Population: <input type = "number" name = "population"><br><br>
+                <button class = "btn btn-primary" id = "citysubmit">Create city</button>
+            </div>
+            <div id = "instructions">
+                <h3>Instructions</h3>
+                <p>- Create a city by completing the forms on the right. Make sure that all forms are
+                    filled out.</p>
+                <p>- Cities that you have created will be displayed on the bottom.</p>
+                <p>- Click on the "delete" button to get rid of the city.</p>
+                <p>- Double click anywhere inside the city box to display a form that
+                    will allow you to edit the city's information. Click on the "save" button
+                    to submit the edited city's information.</p>
+            </div>
+            <div id = "allcities"></div>
+        </div>
+        <script src = "js/citiesmvc.js"></script>
+    </body>
+</html>
